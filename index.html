@@ -6,13 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Password Strength Tester</title>
+
+    <script src="app.js" defer></script>
   </head>
   <body>
     <h1>Passwords Strength Tester</h1>
     <div class="strength-meter"></div>
-    <input type="text" autofocus aria-labelledby="password" />
-    <div id="reasons" class="reasons"></div>
-
-    <script src="app.js"></script>
+    <input
+      type="text"
+      class="password-input"
+      id="password-input"
+      placeholder="Password"
+      autofocus
+      aria-labelledby="password"
+    />
+    <div id="reasons" class="reasons">
+      <p>Reason 1</p>
+      <p>Reason 2</p>
+    </div>
   </body>
 </html>

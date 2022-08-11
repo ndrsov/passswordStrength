@@ -1,0 +1,56 @@
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #222831;
+  color: #eeeeee;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+}
+.strength-meter {
+  position: relative;
+  height: 2rem;
+  width: 90%;
+  border: 3px solid #607eaa;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+
+.strength-meter::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: calc(1% * var(--strength, 0));
+  background-color: #00adb5;
+  border-radius: 1rem;
+
+  transition: width 200ms;
+}
+
+.password-input {
+  margin-top: 1rem;
+  width: 90%;
+  padding: 0.25rem 0.75rem;
+  background-color: #1f2836;
+  color: #eeeeee;
+  border: 1px solid #607eaa;
+  border-radius: 0.3rem;
+  outline: none;
+  text-align: center;
+}
+
+.password-input:focus {
+  border-color: #7185a3;
+}
+.password-input::placeholder {
+  color: #eeeeee;
+}
+
+.reasons > * {
+  margin-top: 0.5rem;
+  color: #eeeeee;
+}
